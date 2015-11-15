@@ -113,6 +113,7 @@
 			
 			function saveOptions() {
 				var options = {}
+				options["version"] = "2.0";
 				//Add all textual values
 				console.log("save textual");
 				$('textarea, select, [type="hidden"], [type="password"], [type="text"]').each(function(){options[$(this).attr('id')] = $(this).val();})
